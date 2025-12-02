@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <title>Linktree Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="theme-switch">
+            <button onclick="setTheme('default', this)" class="active" aria-label="Light Mode">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <span class="label">Light Mode</span>
+            </button>
+
+            <button onclick="setTheme('dark', this)" aria-label="Dark Mode">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+                <span class="label">Dark Mode</span>
+            </button>
+
+            <button onclick="setTheme('warm', this)" aria-label="Warm Mode">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 1v3M10 1v3M14 1v3" />
+                </svg>
+                <span class="label">Warm Mode</span>
+            </button>
+        </div>
+
+        <header class="profile">
+            <div class="avatar-wrap">
+                <img src="images/profile.jpeg" alt="Foto Profil" class="avatar">
+            </div>
+            <h1>Nazwa Dewanti Asyifa</h1>
+            <p>Software Developer | Design Enthusiast</p>
+        </header>
+
+        <main class="links">
+            <a href="https://github.com/nazwaspace" class="link-btn" target="_blank">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/nazwa-asyifa-276860271/" class="link-btn" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/nzwasyifaaa_?igsh=MWhobWJ1eTVod3hsOQ==" class="link-btn" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+            <a href="mailto:nazwaasyifaa05@gmail.com" class="link-btn email">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email Me</span>
+            </a>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Made by NazwaCorp</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
